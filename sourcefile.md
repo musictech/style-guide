@@ -31,7 +31,7 @@ Footnotes are added using a simple format[^1]. Please see the template for examp
 # Mathematics
 Maths can be added in a sentence using dollar symbols, such as $n = ab^2$. A formula outside of a sentence should make use of two dollar symbols at the start and end.
 
-$$ \textrm{16-bit audio} = 2^{16} = 65,536 \textrm{ steps} $$
+$$v = \sqrt{\frac{\epsilon}{\rho}}$$
 
 
 # Typesetting code
@@ -86,20 +86,20 @@ This process will seem overly complicated when you set it up, but you do not nee
 
 This document was created by running the following command. *Do not split into separate lines*; this should be a single line of code separated by spaces.
 
-    pandoc -NSs --toc sourcefile.md
+    pandoc -NSs sourcefile.md
     --filter pandoc-citeproc
     --csl wlv.csl 
-    --bibliography references.bib
+    --bibliography bib.bib
     -o example.html
 
 
-The first line tells Pandoc to make a standalone file with smart quotes,  numbered headings and a table of contents, as well as telling it where the source file is.
+The first line tells Pandoc to make a standalone file with smart quotes and numbered headings, as well as telling it where the source file is.
 
 The second line tells Pandoc to use the 'citeproc' extension to handle citations and the reference list.
 
 The third line tells Pandoc where the CSL file is. Pandoc will 'learn' how to format your document using the University of Wolverhampton Harvard layout.
 
-The fourth line tells Pandoc where your list of sources is.
+The fourth line tells Pandoc where your BibTeX file is.
 
 The fifth line tells Pandoc to output a file. You can change the location and name of the file. Try changing the file type to pdf, rtf, docx or html.
 
