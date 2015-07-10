@@ -16,18 +16,29 @@ We ask you to make your submitted work look exactly like this document. The easi
 
 Please use the default output of Pandoc when creating a PDF file. There is no need to change the fonts or the layout. 
 
-If you are typesetting code add four spaces to the start of the line, or `surround the text with backticks`.
-
-    code example = SinOsc.ar(440);
-
 
 # Title and Authors
 Pandoc makes use of the percentage symbol (%) at the top of the document to denote title, author and date. The date field in this template is used for module information. Please see the top of the document for an example.
 
+
+# Footnotes
 Footnotes are added using a simple format[^1]. Please see the template for examples[^name].
 
 [^1]: Here is a footnote.
 [^name]: You can use numbers or words to show where footnotes should be inserted.
+
+
+# Mathematics
+Maths can be added in a sentence using dollar symbols, such as $n = ab^2$. A formula outside of a sentence should make use of two dollar symbols at the start and end.
+
+$$ \textrm{16-bit audio} = 2^{16} = 65,536 \textrm{ steps} $$
+
+
+# Typesetting code
+If you are typesetting code add four spaces to the start of the line, or surround the text with backticks, such as `var pitch = MouseX.kr(0,1,0)`.
+
+    code example = SinOsc.ar(440);
+
 
 # Quotations
 Quotations that are embedded in a sentence should make use of single quotation marks. Longer quotations should be typeset using the 'Normal text' style. Longer quotations should be indented using the greater-than symbol (>). They are presented as a separate paragraph without quotation marks. A colon should be used to introduce a quotation that is independent from the structure of the main sentence, such as this example from Marc Raibert [-@Raibert1985-ot]:
@@ -38,7 +49,6 @@ The indentation will move back to the leftmost edge after the quotation.
 
 
 # Tables
-
 Tables can be inserted using the following layout.
 
 Style | Name | Shortcut
