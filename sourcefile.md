@@ -1,41 +1,45 @@
 % Music Technology, Audio Technology and Sound Production template
-% Harry Potter
+% Your name goes here
 % 5MU019 Audio Post-Production 2015/16
-
-**For attention of: Severus Snape and Dolores Umbridge**
 
 
 # Abstract {-}
 In this paper we describe the formatting guidelines for written work on the BA(Hons) Music Technology, BA(Hons) Sound Production and MSc Audio Technology courses at the University of Wolverhampton. 
 
-The template is based on the ACM paper template with some changes which are intended to increase legibility given that the screen, rather than paper, is the intended final format.
+The template is a plain text document intended to be used with Pandoc. The resulting file should be a PDF unless the assessment requires an alternative file format.
+
 
 # Introduction
-We ask you to make your submitted work look exactly like this document. The easiest way to do this is simply to make a copy of this document in Google Drive and replace the content with your own material.
+We ask you to make your submitted work look exactly like this document. The easiest way to do this is simply to make a copy of the style guide folder and replace the content with your own material.
 
-# Page size
-The page size should be A4, with margins of 2.54mm on all four sides.
-Normal or Body Text
+# Page size and fonts
 
-Please use a 10-point Times Roman font, or other Roman font with serifs, as close as possible in appearance to Times Roman in which these guidelines have been set. The goal is to have a 10-point text, as you see here. 
+Please use the default output of Pandoc when creating a PDF file. There is no need to change the fonts or the layout. 
 
-Please use sans-serif or non-proportional fonts only for headings or other special purposes, such as distinguishing source code text. Right margins should be justified, not ragged.
+If you are typesetting code add four spaces to the start of the line, or `surround the text with backticks`.
+
+    code example = SinOsc.ar(440);
+
 
 # Title and Authors
-The title (Helvetica Neue 18-point bold), authors' name (Times New Roman 12-point bold) and module information (Times New Roman 11-point) run across the full width of the page – one column wide. Footnotes should be Times New Roman 10-point, and justified to the full width of the column[^1].
+Pandoc makes use of the percentage symbol (%) at the top of the document to denote title, author and date. The date field in this template is used for module information. Please see the top of the document for an example.
+
+Footnotes are added using a simple format[^1]. Please see the template for examples[^name].
 
 [^1]: Here is a footnote.
+[^name]: You can use numbers or words to show where footnotes should be inserted.
 
 # Quotations
-Quotations that are embedded in a sentence should make use of single quotation marks. Longer quotations should be typeset using the 'Normal text' style. Longer quotations should be indented using the increase/decrease indent controls (Command-[ and ]). They are presented as a separate paragraph without quotation marks. A colon should be used to introduce a quotation that is independent from the structure of the main sentence, such as this example from Marc Raibert [-@Raibert1985-ot]:
+Quotations that are embedded in a sentence should make use of single quotation marks. Longer quotations should be typeset using the 'Normal text' style. Longer quotations should be indented using the greater-than symbol (>). They are presented as a separate paragraph without quotation marks. A colon should be used to introduce a quotation that is independent from the structure of the main sentence, such as this example from Marc Raibert [-@Raibert1985-ot]:
 
 > My formula for good writing is simple: once you decide that you want to produce good writing and that you can produce good writing, then all that remains is to write bad stuff, and to revise the bad stuff until it is good.
 
-The indentation should move back to the leftmost edge after the quotation.
+The indentation will move back to the leftmost edge after the quotation.
 
-# The use of styles in Google Drive
-This template uses styles to simplify formatting. Table 1 shows the use of paragraph styles and the corresponding shortcuts on OS X. Note that Windows shortcuts use the Ctrl-Alt modifiers.
 
+# Tables
+
+Tables can be inserted using the following layout.
 
 Style | Name | Shortcut
 ---|---|---
@@ -72,16 +76,14 @@ This process will seem overly complicated when you set it up, but you do not nee
 
 This document was created by running the following command. *Do not split into separate lines*; this should be a single line of code separated by spaces.
 
-    pandoc -NSs sourcefile.md 
+    pandoc -NSs --toc sourcefile.md
     --filter pandoc-citeproc
     --csl wlv.csl 
     --bibliography references.bib
-    -o final.html
-
-pandoc -NSs sourcefile.md --filter pandoc-citeproc --csl wlv.csl --bibliography references.bib -o final.html
+    -o example.html
 
 
-The first line tells Pandoc to make a standalone file with smart quotes and numbered headings, as well as telling it where the source file is.
+The first line tells Pandoc to make a standalone file with smart quotes,  numbered headings and a table of contents, as well as telling it where the source file is.
 
 The second line tells Pandoc to use the 'citeproc' extension to handle citations and the reference list.
 
@@ -96,22 +98,25 @@ The fifth line tells Pandoc to output a file. You can change the location and na
 Do not include headers, footers or page numbers in your submission.
 
 
-# Figures/captions
-Place Tables/Figures/Images in text as close to the reference as possible (see example table above). Captions should be Times New Roman 10-point bold: this template uses the Heading 3 style for table captions and Heading 4 for image captions. They should be numbered (e.g., "Table 1" or "Figure 2"): please note that Table and Figure are spelled out. Figures should be centred with their captions centered beneath the image or picture. Tables should also be centred with their captions centered above the table body. Take care to ensure that captions are not on different pages to the relevant table or image.
+# Figures and captions
+
+Figures can be added using the format shown below. The caption for the image is in square brackets and the path to the image in parentheses. The image can be on your local computer or hosted online.
   
 ![An image example](http://www.enggpedia.com/images/stories/amp-mod.jpg)
 
 
 # Section
-The heading of a section should be in Helvetica Neue 10-point bold in all-capitals flush left. Sections and subsequent sub- sections should be flush left. Use the 'Heading 1' style.
+Section headings make use of a single hash at the start of the line, followed by a single space. The numbering of headings can be suppressed by adding {-} to the end of the heading text (see the *Abstract* and *References* headings).
 
 ## Subsection
-The heading of subsections should be in Helvetica Neue 10-point bold with only the initial letters capitalized. (Note: For subsections and subsubsections, a word like 'the' or 'a' is not capitalized unless it is the first word of the header.) Use the 'Heading 1' style.
+Subsections use two hashes.
 
 ### Subsubsection
-The heading for subsubsections should be in Helvetica Neue 10-point italic with initial letters capitalized and 6-points of white space above the subsubsection head. Use the 'Heading 2' style.
+Subsubsections use three hashes.
+
 
 # Formatting of the reference list
-The reference list below is formatted using Heading 1 for the section heading and Heading 5 for the main text.
+The reference list below has been automatically generated by Pandoc. The section should not be numbered.
+
 
 # References {-}
