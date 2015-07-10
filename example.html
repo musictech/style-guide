@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <meta name="author" content="Your name goes here" />
+  <title>Music Technology, Audio Technology and Sound Production template</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<div id="header">
+<h1 class="title">Music Technology, Audio Technology and Sound Production template</h1>
+<h2 class="author">Your name goes here</h2>
+<h3 class="date">5MU019 Audio Post-Production 20??/??</h3>
+</div>
+<h1 id="abstract" class="unnumbered">Abstract</h1>
+<p>In this paper we describe the formatting guidelines for written work on the BA(Hons) Music Technology, BA(Hons) Sound Production and MSc Audio Technology courses at the University of Wolverhampton.</p>
+<p>The template is a plain text document intended to be used with Pandoc. The resulting file should be a PDF unless the assessment requires an alternative file format.</p>
+<h1 id="introduction"><span class="header-section-number">1</span> Introduction</h1>
+<p>We ask you to make your submitted work look exactly like this document. The easiest way to do this is simply to make a copy of the style guide folder and replace the content with your own material.</p>
+<h1 id="page-size-and-fonts"><span class="header-section-number">2</span> Page size and fonts</h1>
+<p>Please use the default output of Pandoc when creating a PDF file. There is no need to change the fonts or the layout.</p>
+<h1 id="title-and-authors"><span class="header-section-number">3</span> Title and Authors</h1>
+<p>Pandoc makes use of the percentage symbol (%) at the top of the document to denote title, author and date. The date field in this template is used for module information. Please see the top of the document for an example.</p>
+<h1 id="footnotes"><span class="header-section-number">4</span> Footnotes</h1>
+<p>Footnotes are added using a simple format<sup><a href="#fn1" class="footnoteRef" id="fnref1">1</a></sup>. Please see the template for examples<sup><a href="#fn2" class="footnoteRef" id="fnref2">2</a></sup>.</p>
+<h1 id="mathematics"><span class="header-section-number">5</span> Mathematics</h1>
+<p>Maths can be added in a sentence using dollar symbols, such as <span class="math"><em>n</em> = <em>a</em><em>b</em><sup>2</sup></span>. A formula outside of a sentence should make use of two dollar symbols at the start and end.</p>
+<p><br /><span class="math">$v = \sqrt{\frac{\epsilon}{\rho}}$</span><br /></p>
+<h1 id="typesetting-code"><span class="header-section-number">6</span> Typesetting code</h1>
+<p>If you are typesetting code add four spaces to the start of the line, or surround the text with backticks, such as <code>var pitch = MouseX.kr(0,1,0)</code>.</p>
+<pre><code>code example = SinOsc.ar(440);</code></pre>
+<h1 id="quotations"><span class="header-section-number">7</span> Quotations</h1>
+<p>Quotations that are embedded in a sentence should make use of single quotation marks. Longer quotations should be typeset using the ‘Normal text’ style. Longer quotations should be indented using the greater-than symbol (&gt;). They are presented as a separate paragraph without quotation marks. A colon should be used to introduce a quotation that is independent from the structure of the main sentence, such as this example from Marc Raibert <span class="citation">(1985)</span>:</p>
+<blockquote>
+<p>My formula for good writing is simple: once you decide that you want to produce good writing and that you can produce good writing, then all that remains is to write bad stuff, and to revise the bad stuff until it is good.</p>
+</blockquote>
+<p>The indentation will move back to the leftmost edge after the quotation.</p>
+<h1 id="tables"><span class="header-section-number">8</span> Tables</h1>
+<p>Tables can be inserted using the following layout.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Style</th>
+<th align="left">Name</th>
+<th align="left">Shortcut</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">One</td>
+<td align="left">Two</td>
+<td align="left">Three</td>
+</tr>
+<tr class="even">
+<td align="left">Four</td>
+<td align="left">Five</td>
+<td align="left">Six</td>
+</tr>
+</tbody>
+</table>
+<h1 id="referencing"><span class="header-section-number">9</span> Referencing</h1>
+<p>Use the Harvard referencing format. References should be published materials accessible to the public. Internal technical reports may be cited only if they are easily accessible (i.e. you can give the address to obtain the report within your citation) and may be obtained by any reader. Proprietary information may not be cited. Private communications should be acknowledged, not referenced (e.g., “[Robertson, personal communication]”).</p>
+<h2 id="using-pandoc-for-citation-management"><span class="header-section-number">9.1</span> Using Pandoc for citation management</h2>
+<p>Pandoc should be used to manage and format your citations and reference list. Follow the instructions online.</p>
+<p><a href="http://pandoc.org/README.html">http://pandoc.org/README.html</a></p>
+<p>Using a citation without square brackets, as can be seen in <span class="citation">Katz (2006)</span>, is a simple task. If you need the author and year of the publication in brackets <span class="citation">(Koopman, 1997)</span> or just the year <span class="citation">(1997)</span> you can follow the simple formatting examples.</p>
+<p>More citation examples can be found at <a href="http://pandoc.org/demo/example19/Extension-citations.html">http://pandoc.org/demo/example19/Extension-citations.html</a>.</p>
+<h2 id="setting-up-and-running-pandoc"><span class="header-section-number">9.2</span> Setting up and running Pandoc</h2>
+<p>Your BibTeX file and the citation style language (CSL) files need to be on your computer, and Pandoc will need to be told where they are. We recommend keeping your BibTeX and CSL files in a single place and creating a simple script to run Pandoc; we will cover this in lectures.</p>
+<p>The CSL file for the University of Wolverhampton’s Harvard style can be found in this collection of CSL files: <a href="https://github.com/citation-style-language/styles">https://github.com/citation-style-language/styles</a></p>
+<p>Direct link: <a href="https://github.com/citation-style-language/styles/blob/master/harvard-university-of-wolverhampton.csl">https://github.com/citation-style-language/styles/blob/master/harvard-university-of-wolverhampton.csl</a></p>
+<h2 id="running-and-understanding-the-code"><span class="header-section-number">9.3</span> Running and understanding the code</h2>
+<p>This process will seem overly complicated when you set it up, but you do not need to type the commands in if you use the Bash history and (even better) some scripting. It will save you a lot of time once it is set up as it will handle all your layout and citation management.</p>
+<p>This document was created by running the following command. <em>Do not split into separate lines</em>; this should be a single line of code separated by spaces.</p>
+<pre><code>pandoc -NSs sourcefile.md
+--filter pandoc-citeproc
+--csl wlv.csl 
+--bibliography bib.bib
+-o example.html</code></pre>
+<p>The first line tells Pandoc to make a standalone file with smart quotes and numbered headings, as well as telling it where the source file is.</p>
+<p>The second line tells Pandoc to use the ‘citeproc’ extension to handle citations and the reference list.</p>
+<p>The third line tells Pandoc where the CSL file is. Pandoc will ‘learn’ how to format your document using the University of Wolverhampton Harvard layout.</p>
+<p>The fourth line tells Pandoc where your BibTeX file is.</p>
+<p>The fifth line tells Pandoc to output a file. You can change the location and name of the file. Try changing the file type to pdf, rtf, docx or html.</p>
+<h1 id="page-numbering-headers-and-footers"><span class="header-section-number">10</span> Page Numbering, Headers and Footers</h1>
+<p>Do not include headers, footers or page numbers in your submission.</p>
+<h1 id="figures-and-captions"><span class="header-section-number">11</span> Figures and captions</h1>
+<p>Figures can be added using the format shown below. The caption for the image is in square brackets and the path to the image in parentheses. The image can be on your local computer or hosted online.</p>
+<div class="figure">
+<img src="http://www.enggpedia.com/images/stories/amp-mod.jpg" alt="An image example" /><p class="caption">An image example</p>
+</div>
+<h1 id="section"><span class="header-section-number">12</span> Section</h1>
+<p>Section headings make use of a single hash at the start of the line, followed by a single space. The numbering of headings can be suppressed by adding {-} to the end of the heading text (see the <em>Abstract</em> and <em>References</em> headings).</p>
+<h2 id="subsection"><span class="header-section-number">12.1</span> Subsection</h2>
+<p>Subsections use two hashes.</p>
+<h3 id="subsubsection"><span class="header-section-number">12.1.1</span> Subsubsection</h3>
+<p>Subsubsections use three hashes.</p>
+<h1 id="formatting-of-the-reference-list"><span class="header-section-number">13</span> Formatting of the reference list</h1>
+<p>The reference list below has been automatically generated by Pandoc. The section should not be numbered.</p>
+<div class="references">
+<h1><span class="header-section-number">13</span> References</h1>
+<p>Katz, M. J. (2006) <em>From research to manuscript: a guide to scientific writing</em>, Springer.</p>
+<p>Koopman, P. (1997) How to write an abstract, <em>Carnegie mellon university</em>, [online] Available from: <a href="https://users.ece.cmu.edu/~koopman/essays/abstract.html" title="https://users.ece.cmu.edu/~koopman/essays/abstract.html">https://users.ece.cmu.edu/~koopman/essays/abstract.html</a>.</p>
+<p>Raibert, M. H. (1985) Raibert writing advice, <em>Carnegie mellon university</em>, [online] Available from: <a href="https://www.cs.cmu.edu/~pausch/Randy/Randy/raibert.htm" title="https://www.cs.cmu.edu/~pausch/Randy/Randy/raibert.htm">https://www.cs.cmu.edu/~pausch/Randy/Randy/raibert.htm</a>.</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Here is a footnote.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>You can use numbers or words to show where footnotes should be inserted.<a href="#fnref2">↩</a></p></li>
+</ol>
+</div>
+</body>
+</html>
