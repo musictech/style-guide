@@ -80,29 +80,19 @@ The CSL file for the University of Wolverhampton's Harvard style can be found in
 Direct link: <https://github.com/citation-style-language/styles/blob/master/harvard-university-of-wolverhampton.csl>
 
 
-## Running and understanding the code
+## Building your document
 
-This process will seem overly complicated when you set it up, but you do not need to type the commands in if you use the Bash history and (even better) some scripting. It will save you a lot of time once it is set up as it will handle all your layout and citation management.
+This process may seem slightly complicated when you first set it up, but it will save you a lot of time once it is set up as it will handle all your layout and citation management.
 
-This document was created by running the following command. *Do not split into separate lines*; this should be a single line of code separated by spaces.
+This document was created by running the build script (`build.sh`). In order to run it on your computer you must first open a Terminal and `cd` to the folder containing the files. Run the following command to make the build script executable: this only needs to be done once.
 
-    pandoc -NSs sourcefile.md
-    --filter pandoc-citeproc
-    --csl wlv.csl 
-    --bibliography bib.bib
-    -o example.html
+    chmod +x build.sh
 
+From now on, every time you want to build a new copy of your work simply type the following:
 
-The first line tells Pandoc to make a standalone file with smart quotes and numbered headings, as well as telling it where the source file is.
+    ./build.sh
 
-The second line tells Pandoc to use the 'citeproc' extension to handle citations and the reference list.
-
-The third line tells Pandoc where the CSL file is. Pandoc will 'learn' how to format your document using the University of Wolverhampton Harvard layout.
-
-The fourth line tells Pandoc where your BibTeX file is.
-
-The fifth line tells Pandoc to output a file. You can change the location and name of the file. Try changing the file type to pdf, rtf, docx or html.
-
+If you want to make other file types (Word document, HTML, ePub etc.) open and follow the instructions in the `build.sh` script. If you are writing a dissertation there is a minor change we recommend in the build file; open it up and follow the instructions.
 
 
 # Figures and captions
