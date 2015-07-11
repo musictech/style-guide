@@ -5,7 +5,7 @@ echo 'Making the PDF...'
 
 # You can change the name of the output here. Please use the 'surname firstname student ID module code' format.
 
-_file="Potter_Harry_123456-5MU019"
+_file="Potter_Harry_123456_5MU019"
 
 # Dissertations and other long documents should replace the 'article' option with 'report'.
 
