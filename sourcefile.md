@@ -5,7 +5,7 @@ author:
 - Harry Potter
 - Albus Dumbledore
 
-date: 24 October 2016
+date: 30 April 2017
 
 abstract: 'In this paper we describe the formatting guidelines for written work on the BA(Hons) Music Technology, BA(Hons) Sound Production and MSc Audio Technology courses at the University of Wolverhampton. 
 
@@ -52,7 +52,7 @@ If you are typesetting code add four spaces to the start of the line, or surroun
 
 
 # Quotations
-Quotations that are embedded in a sentence should make use of single quotation marks. Longer quotations should be indented using the greater-than symbol (>). They are presented as a separate paragraph without quotation marks. A colon should be used to introduce a quotation that is independent from the structure of the main sentence, such as this example from Marc Raibert [-@Raibert1985-ot]:
+Quotations that are embedded in a sentence should make use of single quotation marks. Longer quotations should be indented using the greater-than symbol (>). They are presented as a separate paragraph without quotation marks. A colon should be used to introduce a quotation that is independent from the structure of the main sentence, such as this example from Marc Raibert [-@Raibert1985-ot, p.35]:
 
 > My formula for good writing is simple: once you decide that you want to produce good writing and that you can produce good writing, then all that remains is to write bad stuff, and to revise the bad stuff until it is good.
 
@@ -79,7 +79,7 @@ Pandoc should be used to manage and format your citations and reference list. Fo
 
 <http://pandoc.org/README.html>
 
-Using a citation without square brackets, as can be seen in @Katz2006-ci, is a simple task. If you need the author and year of the publication in brackets [@Koopman1997-ag] or just the year [-@Koopman1997-ag] you can follow the simple formatting examples.
+Using a citation without square brackets, as can be seen in @Katz2006-ci [p. 45-48], is a simple task. If you need the author and year of the publication in brackets [@Koopman1997-ag] or just the year [-@Koopman1997-ag] you can follow the simple formatting examples.
 
 More citation examples can be found at <http://pandoc.org/demo/example19/Extension-citations.html>.
 
@@ -110,11 +110,11 @@ If you want to make other file types (Word document, HTML, ePub etc.) open and f
 
 # Figures and captions
 
-Figures can be added using the format shown below. The caption for the image is in square brackets and the path to the image in parentheses. Images can be hosted online (see Image 1) or on your local computer (see Image 2). Refer to the images in the body text as the images will be automatically placed in the most appropriate location.
+Figures can be added using the format shown below. The caption for the image is in square brackets and the path to the image in parentheses. Images can be hosted online (@Fig:mod) or on your local computer (@Fig:3d). Refer to the images in the body text as the images will be automatically placed in the most appropriate location.
   
-![An example of an image added directly from a URL [@Kinsler2000-hd]](http://www.enggpedia.com/images/stories/amp-mod.jpg)
+![An example of an image added directly from a URL [@Kinsler2000-hd, p.81]](http://www.enggpedia.com/images/stories/amp-mod.jpg){#fig:mod}
 
-![An example of a local image in the same folder as the text file [@Howard2000-dr]](3d-domains.png)
+![An example of a local image in the same folder as the text file [@Howard2000-dr, p.29]](3d-domains.png){#fig:3d}
 
 
 
