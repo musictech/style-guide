@@ -9,22 +9,22 @@ _file="Potter_Harry_123456_5MU019"
 
 # Dissertations and other long documents should replace the 'article' option with 'report'.
 
-pandoc -r markdown+pipe_tables+table_captions+yaml_metadata_block -F pandoc-crossref -F pandoc-citeproc -Ss -N --toc --toc-depth=2 --latex-engine=xelatex -V papersize=A4 -V fontsize=10pt -V classoption=onecolumn -V documentclass=article -V lang=british --csl=wlv.csl --bibliography=bib.bib -o $_file.pdf sourcefile.md
+pandoc -r markdown+pipe_tables+table_captions+yaml_metadata_block -F pandoc-citeproc -Ss -N --toc --toc-depth=2 --latex-engine=xelatex -V papersize=A4 -V fontsize=10pt -V classoption=onecolumn -V documentclass=article -V lang=british --csl=wlv.csl --bibliography=bib.bib -o $_file.pdf sourcefile.md
 
 
 # Below is the code to create a web page. Simply remove the hash and space from the beginning of the line to make it active.
 
-# pandoc -r markdown+pipe_tables+table_captions+yaml_metadata_block --mathjax -F pandoc-crossref -F pandoc-citeproc -Ss -N --toc --toc-depth=2 --csl=wlv.csl --bibliography=bib.bib -o $_file.html sourcefile.md
+# pandoc -r markdown+pipe_tables+table_captions+yaml_metadata_block --mathjax -F pandoc-citeproc -Ss -N --toc --toc-depth=2 --csl=wlv.csl --bibliography=bib.bib -o $_file.html sourcefile.md
 
 
 # The below line creates a .docx Word file.
 
-# pandoc -r markdown+pipe_tables+table_captions+yaml_metadata_block -F pandoc-crossref -F pandoc-citeproc -Ss -N --toc --toc-depth=2 --csl=wlv.csl --bibliography=bib.bib -o $_file.docx sourcefile.md
+# pandoc -r markdown+pipe_tables+table_captions+yaml_metadata_block -F pandoc-citeproc -Ss -N --toc --toc-depth=2 --csl=wlv.csl --bibliography=bib.bib -o $_file.docx sourcefile.md
 
 
 # This is an epub...
 
-# pandoc -r markdown+pipe_tables+table_captions+yaml_metadata_block -F pandoc-crossref -F pandoc-citeproc -Ss -N --toc --toc-depth=2 --csl=wlv.csl --bibliography=bib.bib -o $_file.docx sourcefile.md
+# pandoc -r markdown+pipe_tables+table_captions+yaml_metadata_block -F pandoc-citeproc -Ss -N --toc --toc-depth=2 --csl=wlv.csl --bibliography=bib.bib -o $_file.docx sourcefile.md
 
 
 echo 'All finished'

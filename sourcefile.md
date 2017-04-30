@@ -110,11 +110,11 @@ If you want to make other file types (Word document, HTML, ePub etc.) open and f
 
 # Figures and captions
 
-Figures can be added using the format shown below. The caption for the image is in square brackets and the path to the image in parentheses. Images can be hosted online (@Fig:mod) or on your local computer (@Fig:3d). Refer to the images in the body text as the images will be automatically placed in the most appropriate location.
+Figures can be added using the format shown below. The caption for the image is in square brackets and the path to the image in parentheses. Images can be hosted online (as seen in Figure 1) or on your local computer (as in Figure 2). Refer to the images in the body text as the images will be automatically placed in the most appropriate location.
   
-![An example of an image added directly from a URL [@Kinsler2000-hd, p.81]](http://www.enggpedia.com/images/stories/amp-mod.jpg){#fig:mod}
+![An example of an image added directly from a URL [@Kinsler2000-hd, p.81]](http://www.enggpedia.com/images/stories/amp-mod.jpg)
 
-![An example of a local image in the same folder as the text file [@Howard2000-dr, p.29]](3d-domains.png){#fig:3d}
+![An example of a local image in the same folder as the text file [@Howard2000-dr, p.29]](3d-domains.png)
 
 
 
