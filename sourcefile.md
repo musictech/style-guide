@@ -1,35 +1,31 @@
 ---
 title: Music Technology, Audio Technology and Sound Production template
-
 author: 
 - Harry Potter
 - Albus Dumbledore
-
-date: 9 May 2017
-
-abstract: 'In this paper we describe the formatting guidelines for written work on the BA(Hons) Music Technology, BA(Hons) Sound Production and MSc Audio Technology courses at the University of Wolverhampton. 
-
-The template is a plain text document intended to be used with Pandoc. The resulting file should be a PDF unless the assessment requires an alternative file format.'
+date: 13 September 2018
+abstract: In this paper we describe the formatting guidelines for written work on the BA(Hons) Music Technology, BA(Hons) Sound Production and MSc Audio Technology courses at the University of Wolverhampton. The template is a plain text document intended to be used with Pandoc. The resulting file should be a PDF unless the assessment requires an alternative file format.
 ---
 
 # Introduction
 We ask you to make your submitted work look exactly like this document. The easiest way to do this is simply to make a copy of the style guide folder and replace the content with your own material.
 
 
+# Layout
 
-# Page size and fonts
+## Page size and fonts
 Please use the default output of Pandoc when creating a PDF file. There is no need to change the fonts or the layout. 
 
 
 
-# Title and Authors
+## Title and Authors
 Pandoc makes use a header block at the beginning of the document. This allows you to set the author name(s), dates, the abstract, and other information. Please see the top of the document for an example. The Pandoc manual[^manual] has more information.
 
 [^manual]: <http://pandoc.org/MANUAL.html>
 
 
 
-# Footnotes
+## Footnotes
 Footnotes are added using a simple format[^1]. Please see the template for examples[^name].
 
 [^1]: Here is a footnote.
@@ -37,14 +33,14 @@ Footnotes are added using a simple format[^1]. Please see the template for examp
 
 
 
-# Mathematics
+## Mathematics
 Maths can be added in a sentence using dollar symbols, such as $n = ab^2$. A formula outside of a sentence should make use of two dollar symbols at the start and end.
 
 $$v = \sqrt{\frac{\epsilon}{\rho}}$$
 
 
 
-# Typesetting code
+## Typesetting code
 If you are typesetting code add three or more tildes above and below the code, or surround the text with backticks, such as `var pitch = MouseX.kr(0,1,0)`.
 
 ~~~ {.c}
@@ -52,7 +48,7 @@ code example = SinOsc.ar(440);
 ~~~
 
 
-# Quotations
+## Quotations
 Quotations that are embedded in a sentence should make use of single quotation marks. Longer quotations should be indented using the greater-than symbol (>). They are presented as a separate paragraph without quotation marks. A colon should be used to introduce a quotation that is independent from the structure of the main sentence, such as this example from Marc Raibert [-@Raibert1985-ot, p.35]:
 
 > My formula for good writing is simple: once you decide that you want to produce good writing and that you can produce good writing, then all that remains is to write bad stuff, and to revise the bad stuff until it is good.
@@ -61,7 +57,7 @@ The indentation will move back to the leftmost edge after the quotation.
 
 
 
-# Tables
+## Tables
 Tables can be inserted using the following layout.
 
 Style | Name | Shortcut
@@ -85,7 +81,7 @@ Using a citation without square brackets, as can be seen in @Katz2006-ci [p. 45-
 More citation examples can be found at <http://pandoc.org/demo/example19/Extension-citations.html>.
 
 
-## Setting up and running Pandoc
+# Setting up and running Pandoc
 Your BibTeX file and the citation style language (CSL) files need to be on your computer, and Pandoc will need to be told where they are. We recommend keeping your BibTeX and CSL files in a single place and creating a simple script to run Pandoc; we will cover this in lectures.
 
 The CSL file for the University of Wolverhampton's Harvard style can be found in this collection of CSL files: <https://github.com/citation-style-language/styles>
@@ -117,7 +113,7 @@ If you want to make other file types (Word document, HTML, ePub etc.) open and f
 
 Figures can be added using the format shown below. The caption for the image is in square brackets and the path to the image in parentheses. Images can be hosted online (as seen in Figure 1) or on your local computer (as in Figure 2). Refer to the images in the body text as the images will be automatically placed in the most appropriate location.
   
-![An example of an image added directly from a URL [@Kinsler2000-hd, p.81]](http://www.enggpedia.com/images/stories/amp-mod.jpg)
+![An example of an image added directly from a URL [@Kinsler2000-hd, p.81]](https://archive.bleu255.com/makeart/2008/images/pure_data-workshop.png)
 
 ![An example of a local image in the same folder as the text file [@Howard2000-dr, p.29]](3d-domains.png)
 
