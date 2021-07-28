@@ -11,7 +11,7 @@ documentclass: article
 lang: en-GB
 csl: wlv.csl
 bibliography: bib.bib
-abstract: In this paper we describe the formatting guidelines for written work on the BA(Hons) Music Technology, BA(Hons) Sound Production and MSc Audio Technology courses at the University of Wolverhampton. The template is a plain text document intended to be used with Pandoc. The resulting file should be a PDF unless the assessment requires an alternative file format.
+abstract: In this paper we describe the formatting guidelines for written work on the BSc (Hons) Audio Technology and Production, BA (Hons) Music Technology, BA (Hons) Sound Production, and MSc Audio and Creative Technology courses at the University of Wolverhampton. The template is a plain text document intended to be used with Pandoc. The resulting file should be a PDF unless the assessment requires an alternative file format.
 ---
 
 # Introduction

@@ -1,6 +1,6 @@
 # Style guide and template
 
-Style guide and template for written work on the Music Technology, Sound Production and Audio Technology programmes at the University of Wolverhampton.
+Style guide and template for written work on the BSc (Hons) and MSc Audio/Music/Sound Technology/Production programmes at the University of Wolverhampton.
 
 The template makes use of Pandoc, LaTeX and BibTeX. You will need to install Pandoc and LaTeX, and a reference/citation manager which either works with, or can output, BibTeX files. Most reference software can do this. Good BibTeX citation managers include BibDesk (MacOS) and JabRef (cross platform).
 
